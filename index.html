@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#opd">OPD Management</a></li>
+                <li><a href="#beds">Bed Availability</a></li>
+                <li><a href="#medicine">Medicine Management</a></li>
+                <li><a href="#inventory">Inventory Management</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="opd">
+            <h2>OPD Management</h2>
+            <form>
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" id="patient-name" name="patient-name"><br><br>
+                <label for="doctor-name">Doctor Name:</label>
+                <input type="text" id="doctor-name" name="doctor-name"><br><br>
+                <label for="appointment-time">Appointment Time:</label>
+                <input type="datetime-local" id="appointment-time" name="appointment-time"><br><br>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+        <section id="beds">
+            <h2>Bed Availability</h2>
+            <table>
+                <tr>
+                    <th>Bed Number</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Occupied</td>
+                </tr>
+                <!-- Add more rows dynamically using JavaScript -->
+            </table>
+        </section>
+        <section id="medicine">
+            <h2>Medicine Management</h2>
+            <form>
+                <label for="medicine-name">Medicine Name:</label>
+                <input type="text" id="medicine-name" name="medicine-name"><br><br>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity"><br><br>
+                <button type="submit">Add Medicine</button>
+            </form>
+        </section>
+        <section id="inventory">
+            <h2>Inventory Management</h2>
+            <table>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>Bandages</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Gloves</td>
+                    <td>50</td>
+                </tr>
+                <!-- Add more rows dynamically using JavaScript -->
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
