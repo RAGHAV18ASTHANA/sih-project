@@ -6,7 +6,11 @@ const toggleNav = () => {
   navbar.classList.toggle("active");
   mobileNav.classList.toggle("hamburger-active");
 };
-mobileNav.addEventListener("click", () => toggleNav());
+
+// Add the event listener for toggling the menu
+mobileNav.addEventListener("click", toggleNav);
+
+
 
 // script.js
 let opdQueue = [];
