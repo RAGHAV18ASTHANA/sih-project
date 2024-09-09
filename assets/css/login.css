@@ -1,0 +1,113 @@
+.login-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83.8vh;
+    background-color: #a5a5a5;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.form-container {
+    width: 100%;
+    position: relative;
+}
+
+.switch-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.switch-btn {
+    flex: 1;
+    padding: 10px;
+    background-color: #f0f4f7;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.switch-btn.active {
+    background-color: #1062fe;
+    color: white;
+}
+
+.form-box {
+    padding: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 10px;
+    background-color: #f0f4f7;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-btn.active {
+    background-color: #009AFF;
+    color: white;
+}
+
+form {
+    display: none;
+}
+
+form.active {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #009AFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #007ACC;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+.header-class{
+    display: block;
+}
