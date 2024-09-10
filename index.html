@@ -15,6 +15,10 @@
 </head>
 
 <body>
+    <!-- Preloader Section -->
+    <div id="preloader">
+        <img src="assets/img/elastic.gif" alt="Loading..." />
+    </div>
     <!-- header -->
     <header class="header-class">
         <nav class="navbar">
@@ -103,7 +107,19 @@
         </section>
     </main>
 
-
+    <script>
+        setTimeout(function() {
+            const preloader = document.getElementById('preloader');
+            const mainContent = document.getElementById('main-content');
+        
+            // Hide the preloader
+            preloader.style.display = 'none';
+            
+            // Show the main content
+            mainContent.style.display = 'block';
+        }, 1000); // 1500 milliseconds = 1.5 seconds
+        
+    </script>
     <script src="script.js"></script>
 </body>
 
