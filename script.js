@@ -91,8 +91,3 @@ document.getElementById('discharge-patient-btn').addEventListener('click', () =>
         }
     }
 });
-
-//preloader
-// Run the code as soon as the script is executed
-// Set a timer immediately to hide the preloader after 1.5 seconds
-

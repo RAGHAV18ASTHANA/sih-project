@@ -1,0 +1,29 @@
+<main>
+        <section id="opd-queue">
+            <h2>OPD Queue</h2>
+            <ul id="opd-queue-list"></ul>
+            <button id="add-patient-btn">Add Patient</button>
+        </section>
+        <section id="bed-availability">
+            <h2>Bed Availability</h2>
+            <p id="bed-availability-count"></p>
+        </section>
+        <section id="admission">
+            <h2>Admission</h2>
+            <form id="admission-form">
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" id="patient-name" name="patient-name"><br><br>
+                <label for="bed-type">Bed Type:</label>
+                <select id="bed-type" name="bed-type">
+                    <option value="general">General</option>
+                    <option value="private">Private</option>
+                </select><br><br>
+                <button id="admit-patient-btn">Admit Patient</button>
+            </form>
+        </section>
+        <section id="inventory">
+            <h2>Inventory</h2>
+            <ul id="inventory-list"></ul>
+            <button id="add-medicine-btn">Add Medicine</button>
+        </section>
+    </main>
