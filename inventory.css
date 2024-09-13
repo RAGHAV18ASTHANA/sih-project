@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#add-item-form {
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#inventory-table th, #inventory-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#inventory-table th {
+    background-color: #f0f0f0;
+}
