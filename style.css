@@ -248,8 +248,7 @@ button:hover {
   color: rgba(38, 92, 109, 0.9); /* Light blue */
   font-size: 2rem; /* Keep the size */
   margin-bottom: 10px;
-  border-left: 4px solid rgba(173, 216, 230, 0.3); /* Blue border */
-  padding-left: 10px;
+  padding-left: 6px;
 }
 
 .hero-text-button h1 {
@@ -276,3 +275,5 @@ button:hover {
   color: #fff;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+/* about us section */
