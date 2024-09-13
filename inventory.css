@@ -1,32 +1,51 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #d4effb; /* light gray background */
 }
 
 #add-item-form {
     margin-bottom: 20px;
+    background-color: #acd2fb; /* white background */
+    padding: 20px;
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
 }
 
 #search-bar {
     width: 50%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; /* light gray border */
     border-radius: 5px;
     margin-bottom: 20px;
+    background-color: #f6f5e1; /* white background */
 }
 
 #inventory-table {
     width: 100%;
     border-collapse: collapse;
+    border: 1px solid #ddd; /* light gray border */
+    
 }
 
 #inventory-table th, #inventory-table td {
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; /* light gray border */
     padding: 10px;
     text-align: left;
+    background-color: #f7f7f7; /* light gray background */
 }
 
 #inventory-table th {
-    background-color: #f0f0f0;
+    background-color: #337ab7; /* blue background for table headers */
+    color: #fff; /* white text for table headers */
+}
+
+#inventory-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* light gray background for even rows */
+}
+
+#inventory-table tr:hover {
+    background-color: #18b8e9; /* light gray background on hover */
 }
