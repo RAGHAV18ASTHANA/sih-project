@@ -10,20 +10,21 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; 
-  --default-color: #444444; 
-  --heading-color: #2c4964; 
-  --accent-color: #1977cc; 
-  --surface-color: #ffffff; 
-  --contrast-color: #ffffff; 
+:root {
+  --background-color: #ffffff;
+  --default-color: #444444;
+  --heading-color: #2c4964;
+  --accent-color: #1977cc;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
 }
 
 
-section{
+section {
   border-radius: none;
 
 }
@@ -203,9 +204,7 @@ nav ul li a:hover {
   height: auto;
 }
 
-<<<<<<< HEAD
 
-=======
 .hero-header {
   background: url(assets/img/hero-bg.jpg) top right no-repeat;
   background-size: cover;
@@ -223,15 +222,19 @@ nav ul li a:hover {
 }
 
 .hero-text-button h5 {
-  color: rgba(38, 92, 109, 0.9); /* Light blue */
-  font-size: 2rem; /* Keep the size */
+  color: rgba(38, 92, 109, 0.9);
+  /* Light blue */
+  font-size: 2rem;
+  /* Keep the size */
   margin-bottom: 10px;
   padding-left: 6px;
 }
 
 .hero-text-button h1 {
-  color: #6a5acd; /* Slate blue */
-  font-size: 3.3rem; /* Keep the size */
+  color: #6a5acd;
+  /* Slate blue */
+  font-size: 3.3rem;
+  /* Keep the size */
   margin-bottom: 20px;
 }
 
@@ -239,7 +242,8 @@ nav ul li a:hover {
   display: inline-block;
   padding: 15px 30px;
   margin-right: 15px;
-  background-color: #6a5acd; /* Slate blue */
+  background-color: #6a5acd;
+  /* Slate blue */
   color: #fff;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -249,10 +253,32 @@ nav ul li a:hover {
 }
 
 .hero-button a:hover {
-  background-color: #4169e1; /* Royal blue on hover */
+  background-color: #4169e1;
+  /* Royal blue on hover */
   color: #fff;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+.overlay {
+  background-color: rgba(255, 255, 255, 0); /* Initially transparent */
+  z-index: 1; /* Behind the content but above the background */
+  transition: background-color 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* White overlay with 70% opacity */
+    height: 100%;
+  }
+  .hero-text-button h1 {
+    font-size: 2.8rem;
+  }
+  .hero-header{
+    height: 70vh;
+  }
+  .hero-text-button h5{
+    color: rgba(58, 204, 248, 0.9);
+  }
+}
+
 /* about us section */
->>>>>>> ddb4ff4bab500ce5b70347131991c747a42c6882
