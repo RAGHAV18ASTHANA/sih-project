@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPD Queuing System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="opd.css">
+</head>
+<body>
+    <header class="header-class">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/img/Logo64x64.png" alt="logo" />
+                <h1>LOGO</h1>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">OPD</a>
+                </li>
+                <li>
+                    <a href="#">Bed Availability</a>
+                </li>
+                <li>
+                    <a href="#">Admission</a>
+                </li>
+                <li>
+                    <a href="inventory.html">Inventory</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </nav>
+        <div class="menubar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="opd.html">OPD</a>
+                </li>
+                <li>
+                    <a href="#">Bed Availability</a>
+                </li>
+                <li>
+                    <a href="#">Admission</a>
+                </li>
+                <li>
+                    <a href="inventory.html">Inventory</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section id="management">
+            <h2>Management Interface</h2>
+            <form id="add-patient-form">
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" id="patient-name" required>
+                <br>
+                <label for="uhid">UHID:</label>
+                <input type="text" id="uhid" required>
+                <br>
+                <label for="waiting-time">Waiting Time (minutes):</label>
+                <input type="number" id="waiting-time" required>
+                <br>
+                <button type="submit">Add Patient to Queue</button>
+            </form>
+        </section>
+        <section id="queue">
+            <h2>Patient Queue</h2>
+            <ul id="patient-list">
+                <!-- patient list will be displayed here -->
+            </ul>
+        </section>
+        <section id="waiting-time">
+            <h2>Waiting Time</h2>
+            <p id="waiting-time-display">--</p>
+        </section>
+        <section id="uhid">
+            <h2>Unique Health ID (UHID)</h2>
+            <p id="uhid-display">--</p>
+        </section>
+    </main>
+    <script src="opd.js"></script>
+</body>
+</html>
