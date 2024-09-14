@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -55,13 +55,12 @@ nav .logo {
 }
 
 nav .logo img {
-  height: 25px;
   width: auto;
   margin-right: 10px;
 }
 
 nav .logo h1 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   background: linear-gradient(to right, #b927fc 0%, #2c64fc 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -195,6 +194,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 /* You can customize the GIF size here */
